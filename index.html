@@ -1,38 +1,76 @@
+<!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="website_style.css">
-<script type="text/javascript" src="jquery.js"></script>
-<script type="text/javascript">
-function scrollto(div)
-{
- $('html,body').animate(
- {
-  scrollTop: $("#"+div).offset().top
- },'slow');
-}
-</script>
+  <title>Professional Single Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+    .header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .nav {
+      background-color: #222;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 10px;
+    }
+    
+    .content {
+      background-color: #f0f0f0;
+      padding: 50px;
+      text-align: center;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-
-<div id="header">
- <li id="site_name">Loudoun Cricket Grounds</li>
- <li onclick="scrollto('home');">HOME</li>
- <li onclick="scrollto('LoudounCricket');">Loudoun Cricket</li>
- <li onclick="scrollto('WorldCricket');">World Cricket</li>
-</div>
- 
-<div id="home">
- <h1>There are around 100 cricket teams in and around Loudoun which attracts <p>Lot of revenew</p> to Loudoun county</h1>
- <p></p>
-</div>
-
-<div id="LoudounCricket">
- <p>History, current teams, need of grouds --- comming soon</p>
-</div>
-
-<div id="WorldCricket">
-    <h1>If you have any question or query you can contact us at <br>talkerscode@gmail.com <br><br>or you can fill the form below</h1>
-</div>
-
+  <div class="header">
+    <h1>Professional Single Page</h1>
+  </div>
+  
+  <div class="nav">
+    <a href="#section1">Section 1</a>
+    <a href="#section2">Section 2</a>
+    <a href="#section3">Section 3</a>
+  </div>
+  
+  <div id="section1" class="content">
+    <h2>Section 1</h2>
+    <p>This is the content of Section 1.</p>
+  </div>
+  
+  <div id="section2" class="content">
+    <h2>Section 2</h2>
+    <p>This is the content of Section 2.</p>
+  </div>
+  
+  <div id="section3" class="content">
+    <h2>Section 3</h2>
+    <p>This is the content of Section 3.</p>
+  </div>
+  
+  <div class="footer">
+    <p>&copy; 2023 Your Company. All rights reserved.</p>
+  </div>
 </body>
 </html>
