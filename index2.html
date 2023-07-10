@@ -1,0 +1,38 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="website_style.css">
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript">
+function scrollto(div)
+{
+ $('html,body').animate(
+ {
+  scrollTop: $("#"+div).offset().top
+ },'slow');
+}
+</script>
+</head>
+<body>
+
+<div id="header">
+ <li id="site_name">Loudoun Cricket Grounds</li>
+ <li onclick="scrollto('home');">HOME</li>
+ <li onclick="scrollto('LoudounCricket');">Loudoun Cricket</li>
+ <li onclick="scrollto('WorldCricket');">World Cricket</li>
+</div>
+ 
+<div id="home">
+ <h1>There are around 100 cricket teams in and around Loudoun which attracts <p>Lot of revenew</p> to Loudoun county</h1>
+ <p></p>
+</div>
+
+<div id="LoudounCricket">
+ <p>History, current teams, need of grouds --- comming soon</p>
+</div>
+
+<div id="WorldCricket">
+    <h1>If you have any question or query you can contact us at <br>loudounCountyCricketGrounds@gmail.com <br></h1>
+</div>
+
+</body>
+</html>
